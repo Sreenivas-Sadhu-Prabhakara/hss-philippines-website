@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 72" role="img" aria-label="The Bhagwa Dhwaj — the saffron flame">
+  <defs>
+    <linearGradient id="hf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDEFD3"/>
+      <stop offset="0.55" stop-color="#F6A94E"/>
+      <stop offset="1" stop-color="#EF8A2B"/>
+    </linearGradient>
+  </defs>
+  <path d="M33.5 4 C 40 18, 49 24, 44.5 40 C 49 37, 51.5 31, 51 26 C 55 34, 54 47, 44 54 C 48 47, 45 42, 41.5 43 C 44 50, 39 59, 32 59 C 24 59, 18 52, 19 42 C 19.8 35, 25 32, 24.2 24 C 28 30, 28.7 36, 27 42 C 24 30, 27 15, 33.5 4 Z" fill="url(#hf)"/>
+</svg>

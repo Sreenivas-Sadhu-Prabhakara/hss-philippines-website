@@ -4,17 +4,22 @@
 (function () {
   'use strict';
 
+  // Mark JS available so scroll-reveal only hides content when it can reveal it
+  document.documentElement.classList.add('js');
+
   /* ---- Mobile navigation ---- */
   var toggle = document.querySelector('.nav-toggle');
   var menu = document.getElementById('nav-menu');
   if (toggle && menu) {
     var closeMenu = function () {
       toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open menu');
       menu.classList.remove('is-open');
     };
     toggle.addEventListener('click', function () {
       var open = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!open));
+      toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
       menu.classList.toggle('is-open', !open);
     });
     menu.addEventListener('click', function (e) {

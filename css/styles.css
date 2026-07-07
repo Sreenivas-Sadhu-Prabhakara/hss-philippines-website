@@ -505,8 +505,8 @@ hr { border: 0; border-top: 1px solid rgba(100,26,18,0.14); margin: var(--sp-5) 
 .breadcrumb span { opacity: 0.6; margin: 0 0.4em; }
 
 /* ---------- Motion / reveal ---------- */
-[data-reveal] { opacity: 0; transform: translateY(22px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
-[data-reveal].is-visible { opacity: 1; transform: none; }
+.js [data-reveal] { opacity: 0; transform: translateY(22px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+.js [data-reveal].is-visible { opacity: 1; transform: none; }
 [data-reveal-delay="1"] { transition-delay: 0.08s; }
 [data-reveal-delay="2"] { transition-delay: 0.16s; }
 [data-reveal-delay="3"] { transition-delay: 0.24s; }
@@ -519,3 +519,41 @@ hr { border: 0; border-top: 1px solid rgba(100,26,18,0.14); margin: var(--sp-5) 
   [data-reveal] { opacity: 1; transform: none; }
   .hero__sun, .hero__dhwaj { animation: none; }
 }
+
+/* ---------- Footer locations line ---------- */
+.footer__locations { margin-top: var(--sp-4); padding-top: var(--sp-4); border-top: 1px solid rgba(255,247,235,0.14); font-size: 0.9rem; color: rgba(255,247,235,0.7); }
+.footer__locations strong { color: var(--gold-soft); font-family: var(--font-body); font-weight: 600; margin-right: 0.4rem; }
+.footer__locations a { color: rgba(255,247,235,0.82); text-decoration: none; }
+.footer__locations a:hover { color: var(--gold-soft); }
+
+/* ---------- Hero H1 (org name + tagline together, for SEO + design) ---------- */
+.hero__h1 { margin: 0 0 var(--sp-2); }
+.hero__h1-org { display: block; font-family: var(--font-body); font-weight: 600; font-size: var(--step--1); letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-soft); margin-bottom: var(--sp-3); text-shadow: none; }
+.hero__h1-tag { display: block; font-family: var(--font-display); font-weight: 400; font-size: var(--step-5); line-height: 1.08; color: var(--white); }
+
+/* ---------- Softer placeholder (calmer than diagonal "construction tape") ---------- */
+.placeholder { background: linear-gradient(180deg, rgba(239,138,43,0.06), rgba(199,154,59,0.04)); border-color: rgba(200,90,23,0.3); }
+
+/* ---------- Accessibility & polish (excellence pass) ---------- */
+:root { --accent-text: #A8480F; }           /* ~5.3:1 on cream — AA for small text */
+a { color: var(--accent-text); text-decoration-color: rgba(168,72,15,0.4); }
+.eyebrow, .card__link, .rhythm__term, .pillar__gloss, .timeline time, .glossary dt { color: var(--accent-text); }
+/* keep light accents on dark surfaces */
+.hero .eyebrow, .page-hero .eyebrow, .cta-band .eyebrow, .section--maroon .eyebrow { color: var(--gold-soft); }
+.site-footer a:not(.btn), .breadcrumb a, .hero a:not(.btn), .cta-band a:not(.btn) { color: inherit; }
+
+/* Heading hierarchy + tidy wrapping */
+.page-hero h1 { font-size: var(--step-4); }
+h1, h2, h3, .hero__h1-tag { text-wrap: balance; }
+
+/* Anchor jumps clear the sticky header */
+:where([id]) { scroll-margin-top: calc(74px + 1rem); }
+
+/* Centered eyebrows: drop the leading dash */
+.text-center .eyebrow::before, .cta-band .eyebrow::before, .section__head--center .eyebrow::before { display: none; }
+
+/* ---------- Hero live-status strip + on-dark ghost button ---------- */
+.hero__status { display: inline-block; margin: var(--sp-3) auto 0; padding: 0.5em 1.15em; border-radius: 999px; background: rgba(255,253,248,0.14); border: 1px solid rgba(255,247,235,0.3); color: #fff; font-size: var(--step--1); font-weight: 600; }
+.btn--ghost-on-dark { background: transparent; color: #fff; border-color: rgba(255,255,255,0.55); }
+.btn--ghost-on-dark:hover { color: #fff; background: rgba(255,255,255,0.14); border-color: #fff; }
+
