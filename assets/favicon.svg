@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="HSS Philippines">
+  <defs>
+    <linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7d2410"/>
+      <stop offset="0.5" stop-color="#C85A17"/>
+      <stop offset="1" stop-color="#EF8A2B"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDEFD3"/>
+      <stop offset="1" stop-color="#F6A94E"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#dawn)"/>
+  <circle cx="32" cy="27" r="15" fill="#E3C778" opacity="0.35"/>
+  <!-- Bhagwa Dhwaj as rising twin flame-pennants -->
+  <path d="M33.5 8 C 40 20, 47 25, 43.5 39 C 47 36, 49 31, 48.5 27 C 52 34, 51 45, 43 51 C 46.5 45, 44 41, 41 42 C 43 48, 38.5 55, 32 55 C 24.5 55, 19 49, 20 40.5 C 20.7 34.5, 25 32, 24.5 25 C 28 30, 28.5 35, 27 40 C 24.5 30, 27 17, 33.5 8 Z" fill="url(#flame)"/>
+</svg>

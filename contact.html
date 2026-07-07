@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us — HSS Philippines</title>
+<meta name="description" content="Get in touch with HSS Philippines — a new and forming community of families and volunteers. Ask a question, or find and help start a shakha near you. Open to all, no fees — everyone who shares our values is welcome.">
+<link rel="canonical" href="https://hss-philippines.netlify.app/contact.html">
+<meta name="theme-color" content="#EF8A2B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HSS Philippines">
+<meta property="og:title" content="Contact Us — HSS Philippines">
+<meta property="og:description" content="Reach out to our forming community of families and volunteers. Ask a question, or find and help start a shakha near you. Open to all, no fees — everyone is welcome.">
+<meta property="og:url" content="https://hss-philippines.netlify.app/contact.html">
+<meta property="og:image" content="https://hss-philippines.netlify.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact Us — HSS Philippines">
+<meta name="twitter:description" content="Reach out to our forming community. Ask a question, or find and help start a shakha near you. Open to all, no fees.">
+<meta name="twitter:image" content="https://hss-philippines.netlify.app/assets/og-image.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mukta:wght@300;400;500;600;700&family=Tiro+Devanagari+Sanskrit&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="HSS Philippines — home">
+      <img class="brand__mark" src="assets/favicon.svg" alt="" width="42" height="42">
+      <span class="brand__text">
+        <span class="brand__name">HSS Philippines</span>
+        <span class="brand__tag">Sanskar · Seva · Sanghatan</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu"><span></span></button>
+    <nav class="nav-menu" id="nav-menu" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+      <div class="nav-cta"><a class="btn btn--primary" href="contact.html" aria-current="page">Contact us</a></div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span>Contact</nav>
+      <p class="eyebrow">Say hello</p>
+      <h1>Contact us</h1>
+      <p>We would love to hear from you. There is no obligation and no fee — just a warm welcome. Tell us where you are and how you'd like to take part, and a volunteer will get back to you.</p>
+    </div>
+    <svg class="hero__base" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 80 L0 46 C 240 12 480 12 720 34 C 960 56 1200 70 1440 40 L1440 80 Z"/></svg>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container container--narrow text-center">
+      <p class="lede">Our community in the Philippines is just getting started — a small circle of families and volunteers beginning to gather around the values of Sanskar (character), Seva (selfless service) and Sanghatan (unity).</p>
+      <p>So if there isn't a shakha (our weekly family gathering) listed near you yet, please don't let that stop you. Tell us where you are, and we'll do our best to connect you with others nearby so we can grow together. Whether you have a question, would like to bring your family along, or want to help start a gathering in your city — this is the place to reach us.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT: FORM + DETAILS -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="grid grid--2">
+
+        <!-- LEFT: Netlify contact form -->
+        <div data-reveal>
+          <p class="eyebrow">Send us a message</p>
+          <h2>Drop us a line</h2>
+          <p>Fill in the short form below and a volunteer will reply warmly and without pressure. All fields marked with an asterisk are needed; everything else is optional.</p>
+
+          <!-- Netlify form: name="contact", honeypot "bot-field", success sibling handled by js/main.js -->
+          <form class="form mt-4" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="#main">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="field field--hp" aria-hidden="true">
+              <label>Please leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+            </p>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="city">Your city or town</label>
+              <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="e.g. Metro Manila, Cebu, Davao…">
+            </div>
+
+            <div class="field">
+              <label for="message">Your message <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" required placeholder="Ask us anything, tell us about your family, or let us know how you'd like to take part — as much or as little as you like."></textarea>
+            </div>
+
+            <p class="form__note">We will only use your details to reply and to share occasional updates about the community. We will never share them with anyone else, and you can ask us to remove them at any time.</p>
+
+            <div class="btn-row">
+              <button type="submit" class="btn btn--primary">Send message</button>
+            </div>
+          </form>
+
+          <div class="form__success" role="status">
+            <h3 style="margin-bottom:.4rem">Thank you — we're so glad you reached out.</h3>
+            <p>Your message has reached us. A volunteer will get back to you soon with a warm, no-pressure hello. Welcome to the beginning of something good.</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: Other ways to reach us -->
+        <div data-reveal data-reveal-delay="1">
+          <p class="eyebrow">Other ways to reach us</p>
+          <h2>Find us &amp; find your place</h2>
+          <p>As our community is newly forming, some of these details are still being set up. We're publishing each one here as it is confirmed, so nothing below is a placeholder for long.</p>
+
+          <ul class="info-list mt-4">
+            <!-- PLACEHOLDER: public email address — add once a shared inbox is created -->
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <div>
+                <strong>Email</strong>
+                <span class="placeholder__chip">To be added</span>
+                <p style="margin:.3rem 0 0">A shared email address for the community is being set up and will appear here soon. In the meantime, the form on the left reaches us directly.</p>
+              </div>
+            </li>
+
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              <div>
+                <strong>WhatsApp</strong>
+                <p style="margin:.3rem 0 0"><a href="https://wa.me/639158575603">+63 915 857 5603</a> — message our main <em>pracharak</em> (volunteer organiser) to ask a question or join a gathering.</p>
+              </div>
+            </li>
+
+            <!-- PLACEHOLDER: Facebook / Instagram handles — add real handles once the pages go live -->
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18"/></svg>
+              <div>
+                <strong>Social media</strong>
+                <span class="placeholder__chip">To be added</span>
+                <p style="margin:.3rem 0 0">Facebook and Instagram pages are on the way; their links will be listed here once they go live.</p>
+              </div>
+            </li>
+
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <div>
+                <strong>Where we meet</strong>
+                <p style="margin:.3rem 0 0">We currently hold two regular gatherings, and everyone is welcome:</p>
+                <ul style="margin:.5rem 0 0;padding-left:1.1em">
+                  <li><strong>Sunday mornings</strong> — our main shakha at the Hindu temple in Paco, Manila (for the whole family).</li>
+                  <li><strong>Saturday evenings</strong> — the <strong>Chhatrapati Shivaji Shakha</strong>, for our children and young people, at the Crimarcel basketball court.</li>
+                </ul>
+                <p style="margin:.5rem 0 0">Message us on WhatsApp for exact times and directions. New to a city we're not in yet? Tell us where you are and help us begin one.</p>
+              </div>
+            </li>
+
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 21c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>
+              <div>
+                <strong>Our organiser (pracharak)</strong>
+                <p style="margin:.3rem 0 0">Our main <em>pracharak</em> — a full-time volunteer organiser — looks after the gatherings and can help you take part. Reach them on WhatsApp above, or send the form; either way, a real volunteer replies.</p>
+              </div>
+            </li>
+
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div>
+                <strong>What to expect when you reach out</strong>
+                <p style="margin:.3rem 0 0">A real person — a fellow volunteer — will read your message and reply. There's no sales pitch and no obligation, just a friendly answer to your questions and, if you'd like, an invitation to join a gathering. Everyone who shares our values is welcome, whatever their background.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="note note--forming mt-4">
+            <h3>Where to find us</h3>
+            <p>Our Sunday-morning shakha meets at the Hindu temple in Paco, Manila, and the Saturday-evening Chhatrapati Shivaji Shakha meets at the Crimarcel basketball court. For the exact meeting point, timing and directions, message our pracharak on WhatsApp at <a href="https://wa.me/639158575603">+63 915 857 5603</a>.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMING NOTE -->
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="note note--forming">
+        <h3>A community taking shape</h3>
+        <p>HSS in the Philippines is new and forming — we are a group of families and volunteers just beginning to gather, not yet an established chapter with a standing weekly shakha. We share this openly because your reaching out is part of how our story grows. In 2026, volunteers here joined the wider Hindu community in supporting the Chant Mahaveer celebration in Manila and in observing the International Day of Yoga in Makati — small, early steps, with much more to come. There is a place in the next chapter for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="section cta-band">
+    <div class="container container--narrow">
+      <p class="eyebrow" style="justify-content:center;color:rgba(255,240,220,.92)">Everyone is welcome</p>
+      <h2>Come as you are — bring your family</h2>
+      <p>There is no fee to join and no obligation, just a warm welcome, in the spirit of Vasudhaiva Kutumbakam — the whole world is one family. Explore how you can take part, or read our frequently asked questions.</p>
+      <div class="btn-row btn-row--center mt-4">
+        <a class="btn btn--on-dark" href="get-involved.html">Get involved</a>
+        <a class="btn btn--gold" href="resources.html">Read the FAQ</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/favicon.svg" alt="" width="42" height="42">
+        <span class="brand__text"><span class="brand__name">HSS Philippines</span><span class="brand__tag">Sanskar · Seva · Sanghatan</span></span>
+      </a>
+      <p class="footer__about">A voluntary, non-profit, cultural and educational community. Everyone who shares our values is welcome — there is no membership fee.</p>
+      <p class="om" aria-hidden="true" style="font-size:1.8rem;margin:0">ॐ</p>
+    </div>
+    <div class="footer__col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="about.html">About HSS</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="events.html">Events &amp; Festivals</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">News &amp; Updates</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Take part</h4>
+      <ul>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="donate.html">Support Our Work</a></li>
+        <li><a href="resources.html">Resources &amp; FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Our status</h4>
+      <p class="footer__forming">HSS in the Philippines is a new and forming community. Our shakhas now meet weekly in Metro Manila — see the Contact page for times and directions. More gatherings, and any registration, will follow as we grow.</p>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© <span data-year>2026</span> Hindu Swayamsevak Sangh — Philippines. A volunteer community initiative.</span>
+    <span><span class="om" aria-hidden="true">ॐ</span> &nbsp;Vasudhaiva Kutumbakam — the world is one family.</span>
+  </div>
+</footer>
+</body>
+</html>

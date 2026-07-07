@@ -1,0 +1,5 @@
+# HSS Philippines
+User-agent: *
+Allow: /
+
+Sitemap: https://hss-philippines.netlify.app/sitemap.xml

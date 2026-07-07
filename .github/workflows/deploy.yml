@@ -1,0 +1,23 @@
+name: Deploy to Netlify
+
+# Push to main → deploy the site to Netlify production.
+# Requires two repository secrets (Settings → Secrets and variables → Actions):
+#   NETLIFY_AUTH_TOKEN — a Netlify personal access token
+#   NETLIFY_SITE_ID    — the Netlify site/project ID
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to Netlify (production)
+        run: npx --yes netlify-cli@latest deploy --dir=. --prod --message "GitHub Actions: ${{ github.sha }}"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

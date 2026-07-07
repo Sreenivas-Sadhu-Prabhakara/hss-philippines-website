@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="HSS Philippines — Sanskar, Seva and Sanghatan">
+  <defs>
+    <linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#431009"/>
+      <stop offset="0.25" stop-color="#7d2410"/>
+      <stop offset="0.55" stop-color="#C85A17"/>
+      <stop offset="0.82" stop-color="#EF8A2B"/>
+      <stop offset="1" stop-color="#F0B063"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.2" r="0.6">
+      <stop offset="0" stop-color="#FFE8B4" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#FFC978" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#FFAA50" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDEFD3"/>
+      <stop offset="1" stop-color="#F6A94E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#dawn)"/>
+  <rect width="1200" height="630" fill="url(#sun)"/>
+  <g transform="translate(600 150) scale(2.2)">
+    <path d="M33.5 8 C 40 20, 47 25, 43.5 39 C 47 36, 49 31, 48.5 27 C 52 34, 51 45, 43 51 C 46.5 45, 44 41, 41 42 C 43 48, 38.5 55, 32 55 C 24.5 55, 19 49, 20 40.5 C 20.7 34.5, 25 32, 24.5 25 C 28 30, 28.5 35, 27 40 C 24.5 30, 27 17, 33.5 8 Z" fill="url(#flame)" transform="translate(-32 -8)"/>
+  </g>
+  <text x="600" y="430" text-anchor="middle" font-family="Marcellus, Georgia, serif" font-size="78" fill="#FFFDF8" letter-spacing="1">Hindu Swayamsevak Sangh</text>
+  <text x="600" y="490" text-anchor="middle" font-family="Marcellus, Georgia, serif" font-size="40" fill="#FDEFD3" letter-spacing="2" opacity="0.92">Philippines</text>
+  <text x="600" y="560" text-anchor="middle" font-family="Mukta, Arial, sans-serif" font-size="27" fill="#FFE8B4" letter-spacing="5" font-weight="600">SANSKAR &#183; SEVA &#183; SANGHATAN</text>
+</svg>

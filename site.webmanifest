@@ -1,0 +1,14 @@
+{
+  "name": "Hindu Swayamsevak Sangh — Philippines",
+  "short_name": "HSS Philippines",
+  "description": "A growing community of families and volunteers in the Philippines practising Sanskar, Seva and Sanghatan.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FCF6EA",
+  "theme_color": "#EF8A2B",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/favicon.svg", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
